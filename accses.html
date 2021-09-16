@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+    </style>
+    <title>Farrel CV</title>
+    <style>
+        #myTable {
+            width: 48%;
+            margin-top: 5%;
+        }
+        
+        .social-media img {
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <img src="assets/images/about.png" alt="" style="width:200px;margin-top:10%;">
+        <br><br>
+        <h2>Hello There, My Name Is Farrel</h2>
+        <br>
+        <div class="social-media">
+            <img src="assets/images/Facebook.png" alt="">
+            <a href="https://twitter.com/LerrafH" target="_blank"><img src="assets/images/Twitter.png" alt=""></a>
+            <a href="https://github.com/LaLerraf" target="_blank"><img src="assets/images/Octocat.png" alt=""></a>
+        </div>
+        <table class="table" id="myTable">
+            <tr>
+                <td width="40%"><strong> Full Name </strong></td>
+                <td width="10%">:</td>
+                <td>Farrel Aadhipratama Hariadi</td>
+            </tr>
+
+            <tr>
+                <td><strong> Birth Date </strong></td>
+                <td>:</td>
+                <td>Malang , 5 Feb 2005</td>
+            </tr>
+
+            <tr>
+                <td><strong> Age </strong></td>
+                <td>:</td>
+                <td>16 Years Old</td>
+            </tr>
+
+            <tr>
+                <td><strong> Address </strong></td>
+                <td>:</td>
+                <td>RT 11 RW 02 Jl. Masjid Kemantren , Desa Marotopuro , Kec.purwosari, Kab.Pasuruan, Jawa Timur</td>
+            </tr>
+
+            <tr>
+                <td><strong> Educatiion </strong></td>
+                <td>:</td>
+                <td>
+                    <ul>
+                        <li>MI 3 purwosari ( 2012 - 2014)</li>
+                        <li>SDN 1 Purwosari ( 2014 - 2018)</li>
+                        <li>SMPN 1 Purwosari( 2018 - 2020)</li>
+                        <li>SMKN 1 Purwosari ( 2020 - now)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Send Message To Me <br>
+                    <form action="#">
+                        <input type="text" class="form-control w-100" id="message">
+                        <br>
+                        <button type="button" id="send-message" data-wa="081220578000" class=" float-end btn btn-success">Send</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br><br><br>
+    </center>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        $(function() {
+            $('#send-message').click(function() {
+                var vals = $('#message').val();
+                window.location.assign('https://wa.me/' + $(this).data('wa') + '?text=' + vals);
+            });
+        });
+    </script>
+</body>
+
+</html>
